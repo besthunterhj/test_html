@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+
+<div>The current date and time is :</div>
+<div id="time"></div>
+<button id="music">点击</button>
+<script type="text/javascript">
+        var mySetInterval = setInterval(function () {
+            myClock()
+        },1000);
+        function myClock() {
+            var time = new Date();
+            var toString = time.toLocaleTimeString();
+            document.getElementById('time').innerHTML = toString ;
+        }
+        var music = document.getElementById('music');
+        music.onclick = function () {
+            window.open("http://120.77.87.129/1.mp3");
+        }
+</script>
+
+</body>
+<!--<script type="text/javascript">-->
+    <!--var test = function () {-->
+        <!--var i = 'good';-->
+        <!--var = new Object();-->
+        <!--Object();-->
+
+    <!--}-->
+
+    <!--if(confirm("Do you still love her?")) {-->
+        <!--alert("Then you should keep your love!");}-->
+    <!--else{-->
+        <!--alert("Try to do something to love her again!");-->
+    <!--}-->
+
+
+
+<!--</script>-->
+</html>
