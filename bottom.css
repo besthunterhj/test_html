@@ -1,0 +1,25 @@
+#bottom
+{
+	background-color: #28323C;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#author
+{
+	color: #FFFAFA;
+	padding: 10px 0 20px 0;
+	font-size: 15px;
+}
+
+.thanks
+{
+	color: #DCDCDC;
+}
+
+.thanks:hover
+{
+	text-decoration: underline;
+	color: #FF4500;
+}

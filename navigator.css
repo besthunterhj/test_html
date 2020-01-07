@@ -1,0 +1,50 @@
+	a
+	{
+		text-decoration: none;
+		color: #FFFAFA;
+	}
+
+	body
+	{
+		margin: 0;
+		padding: 0;
+		background-color: #F5F5F5;
+	}
+
+	#navigator
+	{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		background-color: #4169E1;
+	}
+
+	#header
+	{
+		display: flex;
+		padding-left: 30px;
+	}
+
+	#logo
+	{
+		margin: 0 10px 0 10px;
+		padding: 15px 15px 15px 15px;
+		font-size: 20px;
+	}
+
+	#logo:hover
+	{
+		color: rgba(248, 248, 255, 0.6);
+	}
+
+	.link
+	{
+		margin: 0 10px 0 10px;
+		padding: 15px 15px 15px 15px;
+		font-size: 18px;
+	}
+
+	.link:hover
+	{
+		background-color: #FF4500;
+	}

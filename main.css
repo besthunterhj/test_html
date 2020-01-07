@@ -1,0 +1,32 @@
+#container
+{
+	padding: 0 15px 0 15px;
+	margin: 10px;
+	width: 75%;
+}
+
+.card
+{
+	background-color: #FFFAFA;
+	padding: 20px;
+	margin-bottom: 20px;
+	font-size: 17px;
+	color: #28323C;
+}
+
+.title
+{
+	color: #1E90FF;
+	font-size: 25px;
+}
+
+.title:hover
+{
+	text-decoration: underline;
+	color: #FF4500;
+}
+
+.preview
+{
+	margin-left:30px;
+}

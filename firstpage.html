@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>my blog</title>
+	<link rel="stylesheet" type="text/css" href="navigator.css">
+	<link rel="stylesheet" type="text/css" href="leftList.css">
+	<link rel="stylesheet" type="text/css" href="bottom.css">
+	<link rel="stylesheet" type="text/css" href="page.css">
+	<style type="text/css">
+
+		#firstPage p
+		{
+			font-size: 15px;
+			line-height: 180%;
+		}
+
+		.back
+		{
+			margin-left: 30px;
+		}
+
+		.paragraph
+		{
+			margin: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="navigator">
+		<div id="header">
+			<a href="index.html">
+				<p id="logo">Blog</p>
+			</a>
+			<a href="index.html">
+				<p class="link">首页</p>
+			</a>
+			<a href="archive.html">
+				<p class="link">文章</p>
+			</a>
+			<a href="about.html">
+				<p class="link">关于</p>
+			</a>
+			<a href="#">
+				<p class="link">登录</p>
+			</a>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="nav">
+			<div class="leftList">
+				<div class="article">
+					<div id="pic"></div>
+					<p id="welcome">Welcome to my blog</p>
+				</div>
+
+
+				<div class="article">
+					<p class="listTitle">置顶文章</p>
+					<a href="firstpage.html">
+						<p class="articleTitle">第一篇文章</p>
+					</a>
+				</div>
+
+
+
+				<div class="article">
+					<p class="listTitle">最近文章</p>
+					<a href="firstpage.html">
+						<p class="articleTitle">第一篇文章</p>
+					</a>
+
+					<a href="#">
+						<p class="articleTitle">第二篇文章</p>
+					</a>
+				</div>
+
+
+
+				<div class="article">
+					<p class="listTitle">跳转站</p>
+					<a href="https://github.com/besthunterhj">
+						<p class="articleTitle">我的Github</p>
+					</a>	
+				</div>
+			</div>
+
+
+
+			<div id="article-index">
+				<div id="article-nav">
+					<h3 class="page-title">我的第一篇文章</h3>
+					<div id="firstPage">
+						<p class="paragraph">
+							<span class="back">在上大学之前，</span>
+							我认为一般人是不需要过多涉深这一方面的，中学期间不断接触的数学考试题也让我以为数学就是研究一些难以弄懂的东西。但当我接触到计算机这一专业时，才发现数学大有用处。今读《数学之美》大叹数学之高深又无处不在，数学之美妙又非常实用。《数学之美》一书向我展示了我们可以利用数学模型通过计算机解决一些生活上最普普通通的事情，而这有蕴含了无数科研价值和开发价值。
+						</p>
+
+						<p class="paragraph">
+							<span class="back">首先，</span>
+							本书前面提到的统计语言模型、马尔可夫模型让我明白了通过数学建模可以解决翻译问题、语音识别问题等日常生活中的重要组成部分，而这些看似复杂的功能却可以通过数学建模分析出来，再通过计算机实现，这就不得不感叹数学在生活之美了；而尔后的图论更是借用欧拉图和哈希表来分析网络爬虫；信息熵和语言模型提供了解决信息问题的数学模型，辛格博士对问题解决坚持简单高效的原则让人明白不断设计算法的真谛。有趣的是， 书里面还介绍了余弦定理与新闻的关系，这在生活中明明是毫无瓜葛的两者却在数学之中有机结合起来了，通过余弦定理能够计算出新闻网页中的文本词汇频率/逆文本频率。本书的后部分主要讲述了如何深化马尔可夫模型来解决自然语言处理问题、介绍了密码学和香农定律，虽然部分学术知识我还不清楚，但却觉得与我所学的专业密切相关。
+						</p>
+
+						<p class="paragraph">
+							<span class="back">虽然已经在计算机专业学习了一年了，</span>
+							但我大一接触算法知识并不多，有时候有一些灵机一动的想法却感叹自己能力太浅而无法实现，这些遗憾也留到了现在。而如今有这样一门课程让我能与算法密切接触，这让我燃起了再次用自己的编程能力去实现这一年来的遗憾。既然，自然语言处理、语音识别、翻译机制等高深复杂的大工程能够通过数学模型解析，那我有有信心通过学习算法知识实现自己的想法。上学期，数据结构老师曾和我们说过，软件 = 数据结构 + 算法，因此算法在软件开发中可以说是大脑在人体内的功能了，没有算法，就无法解决实际的问题，缺乏算法的软件就剩下了数据结构的空壳，就像失去了灵魂和思想的活死人。而在上学期我认为图这一数据结构相比线性结构复杂很多，设计的问题也很广，这一学期我希望自己能够实现简易的导航软件——优化最短、最优路径问题，这虽然在数据结构中尝试实现过，但却没有达到我之前预期的目标，因此希望自己能够在掌握贪心算法及其它重要算法后能实现这一软件。
+						</p>
+					</div>
+				</div>	
+			</div>
+
+
+		</div>	
+	</div>
+
+	<div id="bottom">
+		<div id="author">
+			©2020 besthunterhj.github.io , Powered by 
+			<a href="https://github.com/">
+				<span class="thanks">Github</span>
+			</a>
+			<a href="https://github.com/besthunterhj">
+				<span class="thanks">besthunterhj</span>
+			</a>
+		</div>
+	</div>
+</body>
+</html>

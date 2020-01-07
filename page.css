@@ -1,0 +1,52 @@
+.main
+{
+	position: relative;
+	width: 100%;
+}
+
+.nav
+{	
+	display: flex;
+	justify-content: flex-start;
+	padding-bottom: 60px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+
+#article-index
+{
+	width: 75%;
+	position: relative;
+}
+
+
+#article-nav
+{
+	float: left;
+	background-color: #FFFAFA;
+	width: 100%;
+	margin: 1px;
+	padding: 20px;
+	color: #28323C;
+}
+
+.appendix
+{
+	font-size: 25px;
+}
+
+.article-title a
+{
+	color: #1E90FF;
+	font-size: 18px;
+}
+
+.month
+{
+	margin: 4px 20px 0 0;
+	font-size: 15px;
+
+}
