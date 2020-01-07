@@ -29,7 +29,7 @@
 		</div>
 	</div>
 
-	<div class="main">
+	<div class="main" id="main-box">
 		<div class="nav">
 			<div class="leftList">
 				<div class="article">
@@ -78,6 +78,15 @@
 					<p class="introduction">
 						以后会常在这个博客中写一写日常、学习心得等，希望自己能够坚持下来。
 					</p>
+					<p class="introduction">
+						今日随笔（2020.1.7）：关于css3：弄了很久的导航栏动画效果，结果发现是要用到css3的两个属性
+						<span style="color: #ff0000">transform和transition</span>
+						//突然发现有必要开一个记录每天笔记的专栏
+					</p>
+					<p class="introduction">
+						transform：进行2d，3d变化，其中translate(x,y)是让某节点向x轴、y轴平移x和y;
+						transition：让节点的某css属性的变化不是一瞬间改变，而是在一定时间内完成即可，具体时间由编程者决定。
+					</p>
 				</div>	
 			</div>
 		</div>	
@@ -95,4 +104,33 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript">
+	let main = document.getElementById("main-box");
+	let pic = document.getElementById("pic");
+
+	pic.onclick = function()
+	{
+		window.open("https://besthunterhj.github.com/187.jpg");
+	}
+
+	let navigator = document.getElementById("navigator");
+	let beforeScroll = document.documentElement.scrollTop;
+
+	window.onscroll = function()
+	{
+		let afterScroll = document.documentElement.scrollTop;
+		if (afterScroll > 57 && afterScroll - beforeScroll < 0) 
+		{
+			navigator.className = "fix";
+			main.style.margin = "67px 0 0 0"
+		}
+		else
+		{
+			navigator.className = "none";
+			main.style.margin = "0";
+		}
+
+		beforeScroll = afterScroll;
+	}
+</script>
 </html>

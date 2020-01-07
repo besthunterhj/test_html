@@ -16,9 +16,36 @@
 		}
 
 
+		img
+		{
+			border-radius: 50%;
+			border: 3px solid #EEE;
+		}
+
+		#welcome-box
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#pic
+		{
+			cursor: zoom-in;
+		}
+
+		.back
+		{
+			margin-left: 30px;
+		}
+
+		.preview
+		{
+			line-height: 180%;
+		}
 	</style>
 </head>
-<body>
+<body id="body">
 	<div id="navigator">
 		<div id="header">
 			<a href="index.html">
@@ -39,12 +66,14 @@
 		</div>
 	</div>
 
-	<div class="main">
+	<div class="main" id="main-box">
 		<div class="nav">
 			<div class="leftList">
 				<div class="article">
-					<div id="pic"></div>
-					<p id="welcome">Welcome to my blog</p>
+					<img src="187.jpg" id="pic">
+					<div id="welcome-box">
+						<p id="welcome">Welcome to my blog</p>
+					</div>
 				</div>
 
 
@@ -84,7 +113,9 @@
 					<a href="firstpage.html">
 						<h3 class="title">我的第一篇文章</h3>
 					</a>
-					<p class="preview">《数学之美》原本是算法老师推荐的书籍，但我读后发现原来数学远不只是刷题，它还有许多美丽之处</p>
+					<p class="preview">
+						<span class="back">《数学之美》</span>原本是算法老师推荐的书籍，但我读后发现原来数学远不只是刷题，它还有许多美丽之处，好好探索数学之美吧！
+					</p>
 				</div>
 				<div class="card">
 					<p class="time">2020.1.4</p>
@@ -132,4 +163,33 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript">
+	let main = document.getElementById("main-box");
+	let pic = document.getElementById("pic");
+
+	pic.onclick = function()
+	{
+		window.open("https://besthunterhj.github.com/187.jpg");
+	}
+
+	let navigator = document.getElementById("navigator");
+	let beforeScroll = document.documentElement.scrollTop;
+
+	window.onscroll = function()
+	{
+		let afterScroll = document.documentElement.scrollTop;
+		if (afterScroll > 57 && afterScroll - beforeScroll < 0) 
+		{
+			navigator.className = "fix";
+			main.style.margin = "67px 0 0 0"
+		}
+		else
+		{
+			navigator.className = "none";
+			main.style.margin = "0";
+		}
+
+		beforeScroll = afterScroll;
+	}
+</script>
 </html>

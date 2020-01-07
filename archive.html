@@ -44,7 +44,7 @@
 		</div>
 	</div>
 
-	<div class="main">
+	<div class="main" id="main-box">
 		<div class="nav">
 			<div class="leftList">
 				<div class="article">
@@ -118,4 +118,33 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript">
+	let main = document.getElementById("main-box");
+	let pic = document.getElementById("pic");
+
+	pic.onclick = function()
+	{
+		window.open("https://besthunterhj.github.com/187.jpg");
+	}
+
+	let navigator = document.getElementById("navigator");
+	let beforeScroll = document.documentElement.scrollTop;
+
+	window.onscroll = function()
+	{
+		let afterScroll = document.documentElement.scrollTop;
+		if (afterScroll > 57 && afterScroll - beforeScroll < 0) 
+		{
+			navigator.className = "fix";
+			main.style.margin = "67px 0 0 0"
+		}
+		else
+		{
+			navigator.className = "none";
+			main.style.margin = "0";
+		}
+
+		beforeScroll = afterScroll;
+	}
+</script>
 </html>

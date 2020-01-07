@@ -19,6 +19,33 @@
 		background-color: #4169E1;
 	}
 
+	.none
+	{
+
+	}
+
+	.fix
+	{
+		position: fixed;
+		top: -57px;
+		left: 0;
+		z-index: 2;
+		width: 100%;
+		transform: translate(0,57px);
+		transition: all 0.5s ease-in-out;
+	}
+
+	.offset
+	{
+
+	}
+
+	.scrolling
+	{
+		visibility: visible;
+		transform: translate(0,0);
+	}
+
 	#header
 	{
 		display: flex;
